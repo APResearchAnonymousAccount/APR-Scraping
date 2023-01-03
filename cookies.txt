@@ -1,0 +1,8 @@
+#HttpOnly_.facebook.com	TRUE	/	TRUE	1734131829	datr	aFmaYwWFGD0DMmTOVC_qY31D
+.facebook.com	TRUE	/	TRUE	1672793696	locale	en_US
+#HttpOnly_.facebook.com	TRUE	/	TRUE	1735261566	sb	blmaY3vcs11WoJ573P5ktpIR
+.facebook.com	TRUE	/	TRUE	1703771491	c_user	617008270
+#HttpOnly_.facebook.com	TRUE	/	TRUE	1703771491	xs	28%3A2I_VY0g99ObqyQ%3A2%3A1672189551%3A-1%3A2716%3A%3AAcX58ldmbLkQcmeqtOEvitR4HbCz9W1zhvNUGkoYKQ
+#HttpOnly_.facebook.com	TRUE	/	TRUE	1680011490	fr	0bLmBpoF3TOLArNpf.AWXEyqUIdLSkmw3PJR1y-CIe_Ho.BjrEnV.ex.AAA.0.0.BjrEnV.AWW1KsT1ui0
+.facebook.com	TRUE	/	TRUE	0	presence	C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1672235493493%2C%22v%22%3A1%7D
+.facebook.com	TRUE	/	TRUE	1672840988	wd	1280x556
