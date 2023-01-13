@@ -1,6 +1,7 @@
 {
   "name": "scraping",
   "version": "1.0.0",
+  "type": "module",
   "description": "This is a thing for scraping various social media sites",
   "main": "scrapev1",
   "scripts": {
