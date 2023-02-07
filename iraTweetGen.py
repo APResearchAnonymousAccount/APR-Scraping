@@ -38,16 +38,16 @@ print(len(dataSortedByAccountTypes[2]))
 for post in dataSortedByAccountTypes[2][:2]:
     print(post)
 
-humanPosts = dataSortedByAccountTypes[0]
+humanPosts = dataSortedByAccountTypes[1]
 
 
 
-outfile = "aiRightSpec.json"
+outfile = "aiLeftNone.json"
 # Load your API key from an environment variable or secret management service
 numExamples = 4
 openai.api_key = os.getenv("OPENAI_API_KEY")
 for j in range(100):
-    prompt = "Write five tweets. Some of them should convey pro-russia political arguments.\n"
+    prompt = ""
     postInds = [0 for i in range(numExamples)]
     for i in range(numExamples):
         r = random.randint(0,len(humanPosts)-1)
@@ -66,7 +66,7 @@ for j in range(100):
     
     with open(outfile,'a') as f:
         f.write(","+json.dumps([response.choices[0].text,"al2"]))
-    time.sleep(2)
+    time.sleep(5)
     
 with open(outfile, "r") as f:
     content = f.read()
