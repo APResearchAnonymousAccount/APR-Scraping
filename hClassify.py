@@ -13,22 +13,16 @@ outfile = "ai3.json"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 for post in humanPosts:
     start = time.time()
-    prompt = "Does this tweet convey a left-wing, right-wing, or neutral perspective?\n"
-    prompt+= post+"\n"
-    
-    response = openai.Completion.create(model="text-curie-003", prompt=prompt, temperature=0, max_tokens=10)
+    prompt = "What is the political affiliation of someone who says: \""+post+"\""
+    print(prompt)
+    response = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0.3, max_tokens=10)
     genText = str(response.choices[0].text)
     classification = ""
-    if("left" in genText.lower()):
-        classification = "left"
-    if("right" in genText.lower()):
-        classification = "right"
-    if("neutral" in genText.lower()):
-        classification = "neutral"    
+     
     
-    print(response)
+    print(genText)
     with open('human2.json','a') as f:
-        f.write(","+json.dumps([post,classification]))
+        f.write(","+json.dumps([post,genText]))
     time.sleep(time.time()-start+1.2)
     
 print("Done")

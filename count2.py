@@ -1,5 +1,5 @@
 import json
 
-with open('ai2.json') as f:
+with open('ai4.json') as f:
 	humanPosts = json.load(f)
 print(len(humanPosts))
